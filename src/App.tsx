@@ -1,9 +1,11 @@
+import TodoList from "./features/todoList/todoList";
 
-function App() {
+const App: React.FC = () => {
+  return (
+    <div className="flex justify-center w-full min-h-screen bg-slate-100">
+      <TodoList />
+    </div>
+  );
+};
 
-  return (<div className="w-full h-screen bg-slate-500">
-
-  </div>)
-}
-
-export default App
+export default App;
