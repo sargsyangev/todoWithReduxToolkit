@@ -73,7 +73,7 @@ const TodoList: React.FC = () => {
 
   return (
     <div className="flex flex-col items-center w-1/3 h-full">
-      <h1 className="text-4xl my-7 text-slate-400 select-none">TodoList</h1>
+      <h1 className="text-4xl my-7 text-slate-400 dark:text-white select-none">TodoList</h1>
       <AddSection
         todoValue={todoValue}
         updateValue={updateValue}

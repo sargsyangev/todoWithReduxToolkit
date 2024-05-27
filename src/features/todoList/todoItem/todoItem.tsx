@@ -27,10 +27,10 @@ const TodoItem: React.FC<Props> = ({
   return (
     <div
       className={`flex justify-between items-center w-full h-[50px] mt-1 border-b-2 ${
-        isDone ? "border-green-500" : "border-slate-500"
+        isDone ? "border-green-500" : " dark:border-white border-slate-500"
       } `}
     >
-      <div className="flex float-start items-center w-3/4 h-full p-1 text-2xl overflow-hidden">
+      <div className={`flex float-start items-center w-3/4 h-full p-1 text-2xl dark:text-white ${isDone && "line-through"} overflow-hidden`}>
         {isEditable ? (
           <input
             className="w-full h-full p-1 bg-inherit text-2xl font-sans outline-none"
